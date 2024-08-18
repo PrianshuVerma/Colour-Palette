@@ -1,0 +1,143 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#app{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#toolbar {
+  background: lightgrey;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 10px;
+}
+
+#toolbar button {
+  width: 100px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 1px solid #000;
+  background-color: whitesmoke;
+  font-size: 16px;
+  color: #000;
+}
+
+#toolbar button:disabled {
+  background-color: lightgrey;
+  color: black;
+}
+
+#displayScreen {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Take up all available vertical space */
+  overflow: auto;
+}
+
+#editor {
+  background: whitesmoke;
+  padding: 10px;
+  display: flex;
+  flex:1;
+}
+
+#colorRectangle {
+  border: 1px solid black;
+  flex: 1;
+  margin-right: 5px;
+}
+
+#colorForm {
+  border: 1px solid grey;
+  padding: 10px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-left: 5px;
+}
+
+#radio label{
+
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+
+.formItem {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+label {
+  width: 50px;
+  text-align: right;
+}
+
+.numberInput {
+  width: 50px;
+  text-align: left;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+#swatchList {
+  padding: 10px;
+  border: 1px solid grey;
+  background-color: white;
+  flex: 1 1 0;
+  flex-flow: row wrap;
+  display: flex;
+  align-content: flex-start;
+  overflow: scroll;
+}
+
+#swatchList div{
+  width: 50px;
+  height: 50px;
+  border: 1px solid lightgrey;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+#swatchList div.selected {
+  border: 1px solid black;
+}
+
+#statusBar {
+  background: lightgrey;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #000;
+  margin-top: auto; 
+}
+
+.HexformItem {
+  display: flex;     
+  flex-direction: column; 
+  padding-top: 10px;
+}
+
+.errorMessage {
+  color: red;     
+  padding-top: 4px; 
+}
